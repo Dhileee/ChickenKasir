@@ -18,19 +18,19 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val db = AppDatabase.getDatabase(this)
         val menuDao = db.menuDao()
 
-// Insert dummy data
-        menuDao.insertMenu(MenuEntity(nama = "Ayam Original", harga = 15000, kategori = "Makanan"))
-        menuDao.insertMenu(MenuEntity(nama = "Ayam Geprek", harga = 17000, kategori = "Makanan"))
-        menuDao.insertMenu(MenuEntity(nama = "Nasi Putih", harga = 5000, kategori = "Makanan"))
-        menuDao.insertMenu(MenuEntity(nama = "Es Teh", harga = 3000, kategori = "Minuman"))
+        // Insert dummy data cuma kalo database kosong
+        if (menuDao.getAllMenu().isEmpty()) {
+            menuDao.insertMenu(MenuEntity(nama = "Ayam Original", harga = 15000, kategori = "Makanan"))
+            menuDao.insertMenu(MenuEntity(nama = "Ayam Geprek", harga = 17000, kategori = "Makanan"))
+            menuDao.insertMenu(MenuEntity(nama = "Nasi Putih", harga = 5000, kategori = "Makanan"))
+            menuDao.insertMenu(MenuEntity(nama = "Es Teh", harga = 3000, kategori = "Minuman"))
+        }
 
         val allMenu = menuDao.getAllMenu()
         android.util.Log.d("MainActivity", "Total menu: ${allMenu.size}")
-        allMenu.forEach {
-            android.util.Log.d("MainActivity", "${it.nama} - Rp ${it.harga}")
-        }
     }
 }
