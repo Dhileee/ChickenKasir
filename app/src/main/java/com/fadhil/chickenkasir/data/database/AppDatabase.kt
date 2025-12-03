@@ -5,11 +5,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.fadhil.chickenkasir.data.dao.MenuDao
+import com.fadhil.chickenkasir.data.dao.TransaksiDao
 import com.fadhil.chickenkasir.data.entity.MenuEntity
+import com.fadhil.chickenkasir.data.entity.TransaksiDetailEntity
+import com.fadhil.chickenkasir.data.entity.TransaksiEntity
 
-@Database(entities = [MenuEntity::class], version = 1)
+@Database(
+    entities = [MenuEntity::class, TransaksiEntity::class, TransaksiDetailEntity::class],
+    version = 2
+)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun menuDao(): MenuDao
+    abstract fun transaksiDao(): TransaksiDao
 
     companion object {
         @Volatile
@@ -21,7 +28,10 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "chicken_kasir_db"
-                ).allowMainThreadQueries().build()
+                )
+                    .fallbackToDestructiveMigration()
+                    .allowMainThreadQueries()
+                    .build()
                 INSTANCE = instance
                 instance
             }

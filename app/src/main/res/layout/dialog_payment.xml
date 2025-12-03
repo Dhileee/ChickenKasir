@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTotalDialog"
+        android:text="Total: Rp 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etUangBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Uang Bayar"
+        android:inputType="number"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvKembalian"
+        android:text="Kembalian: Rp 0"
+        android:textSize="16sp"
+        android:textColor="#4CAF50"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
