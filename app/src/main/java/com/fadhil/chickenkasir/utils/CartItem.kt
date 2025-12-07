@@ -1,9 +1,9 @@
 package com.fadhil.chickenkasir.utils
 
-import com.fadhil.chickenkasir.data.entity.MenuEntity
+import com.fadhil.chickenkasir.model.Menu
 
 data class CartItem(
-    val menu: MenuEntity,
+    val menu: Menu,
     var jumlah: Int = 1
 ) {
     fun getSubtotal(): Int = menu.harga * jumlah

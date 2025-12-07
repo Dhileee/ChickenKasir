@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNamaMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Menu"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etHargaMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga (tanpa Rp)"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etDeskripsiMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Menu"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerKategori"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnTambahKategori"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+ Tambah"
+            android:textSize="12sp"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnHapusKategori"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🗑️ Hapus"
+            android:textSize="12sp"
+            android:backgroundTint="#F44336"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPilihGambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📷 Pilih Gambar dari Galeri"
+        android:textSize="14sp"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="12dp"/>
+
+    <ImageView
+        android:id="@+id/ivPreviewGambar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp"/>
+
+</LinearLayout>

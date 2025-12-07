@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548518595322",
+    "project_id": "d-kriuk-kasir",
+    "storage_bucket": "d-kriuk-kasir.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548518595322:android:28f656730ca2699f0e1743",
+        "android_client_info": {
+          "package_name": "com.fadhil.chickenkasir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNaSz6bh5Ul9ghP3B6ntsWd6irQ0KTrp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

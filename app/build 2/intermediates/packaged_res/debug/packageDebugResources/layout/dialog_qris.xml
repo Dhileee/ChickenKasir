@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QRIS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalQRIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rp 50.000"
+        android:textSize="18sp"
+        android:textColor="#FF6F00"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:background="#E0E0E0"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR code dengan aplikasi e-wallet"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnKonfirmasiQRIS"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Pembayaran Berhasil"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"/>
+</LinearLayout>

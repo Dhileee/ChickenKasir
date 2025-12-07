@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken d'Kriuk"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FF6F00"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Ayam Goreng No. 123, Jakarta"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvNoTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No: #001"
+        android:textSize="14sp"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal: 03 Des 2025"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/llItemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalStruk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rp 50.000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/tvMetodePembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metode: Cash"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:id="@+id/llCashDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvUangBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar: Rp 100.000"
+            android:textSize="14sp"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/tvKembalianStruk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali: Rp 50.000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="4dp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terima kasih!"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken d'Kriuk"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btnPrintStruk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🖨️ Print"
+            android:textSize="14sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnSaveStruk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💾 Save PDF"
+            android:textSize="14sp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

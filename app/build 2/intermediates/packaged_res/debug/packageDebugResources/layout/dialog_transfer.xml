@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer Bank"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rp 50.000"
+        android:textSize="18sp"
+        android:textColor="#FF6F00"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer ke:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank BCA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF6F00"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a.n. Chicken d'Kriuk"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setelah transfer, klik tombol di bawah"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnKonfirmasiTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sudah Transfer"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"/>
+</LinearLayout>

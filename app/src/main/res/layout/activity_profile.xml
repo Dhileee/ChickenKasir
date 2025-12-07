@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profil"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FF6F00"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:backgroundTint="#757575"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Avatar Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FF6F00"
+            android:padding="32dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvAvatarInitial"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@android:drawable/ic_menu_sort_by_size"
+                android:gravity="center"
+                android:text="U"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tvNamaProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama User"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tvRoleProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kasir"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Info Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Username -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+
+                <TextView
+                    android:id="@+id/tvUsernameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="username"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+
+                <TextView
+                    android:id="@+id/tvEmailProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email@gmail.com"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Tanggal Daftar -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bergabung Sejak"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+
+                <TextView
+                    android:id="@+id/tvTanggalDaftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07 Desember 2025"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Settings Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaturan Pembayaran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- QR QRIS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR Code QRIS"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+
+                <ImageView
+                    android:id="@+id/ivQrisPreview"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:scaleType="centerInside"
+                    android:background="#F5F5F5"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnUploadQris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload QR QRIS"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Nomor Rekening -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Bank"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etNamaBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contoh: BCA, Mandiri, BNI"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Rekening"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+
+                <EditText
+                    android:id="@+id/etNomorRekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="1234567890"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemilik Rekening"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+
+                <EditText
+                    android:id="@+id/etNamaRekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama sesuai rekening"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnSimpanPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan Pengaturan"
+                    android:backgroundTint="#FF9800"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnLogoutProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

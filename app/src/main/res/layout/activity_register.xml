@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FF6F00">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken d'Kriuk"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Akun Baru"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/etNamaRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etUsernameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username (tanpa spasi)"
+                android:inputType="text"
+                android:padding="16dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password (min 6 karakter)"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Konfirmasi Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="DAFTAR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tvSudahPunyaAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah punya akun? Login di sini"
+                android:textSize="14sp"
+                android:textColor="#FF6F00"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
